@@ -43,7 +43,6 @@ const rollStats = (content) => {
 
 // Rolls a die between 1 and the second term in the content
 const rollDice = (content) => {
-	console.log(content);
 	let [command, n] = content.split(' ');
 	n = n || DEFAULTS.DIE_ROLL;
 	return roll(+n);
