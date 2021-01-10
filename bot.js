@@ -25,7 +25,6 @@ client.on('message', (msg) => {
 
 client.login(TOKEN);
 
-// Expose server so can be pinged to keep alive, i am cheap :)
 if (process.env.ISREP === 'true') {
     const PORT = process.env.PORT || 8080;
     const app = express();
